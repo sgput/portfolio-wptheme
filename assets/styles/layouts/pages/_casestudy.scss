@@ -1,0 +1,32 @@
+/*=========================================================================*/
+/*	#. Case Study Styles
+/*=========================================================================*/
+
+.cs-feat-img { margin-bottom: 5em; }
+
+.cs-row {
+	margin-bottom: 10em;
+	.glyphicon {
+		font-size: 4em;
+		top: 1em;
+	}
+}
+
+.cs-asset {
+	width: 60%;
+	margin-bottom: 4em;
+	@media(min-width: $screen-sm-min) { width: 100%; }
+}
+
+.cs-about {
+	margin-top: 4em;
+	> h3 {
+		text-align: center;
+		font-size: 1.75em;
+		font-family: $font-serif;
+		font-weight: $font-bold;
+	}
+	> p { font-size: 1.5em; }
+}
+
+.cs-header { font-size: 1em; }

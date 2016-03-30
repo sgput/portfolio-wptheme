@@ -1,0 +1,153 @@
+.nav {
+	.sub-menu { display: none; }
+	> li > a {
+  	text-transform: uppercase;
+  	font-family: $font-stack;
+  	font-weight: $font-medium;
+  	font-size: 3.5em;
+  	line-height: 2em;
+  	text-align: center;
+  	color: $brand-dark;
+  	@media(min-width: $screen-sm-min) {
+  		font-size: 1.5em;
+	  	line-height: 1.5em;
+	  	text-align: left;
+  	}
+  	&:hover {
+		background-color: $brand-primary;
+		color: #fff;
+  	}
+	}  
+}
+
+.navbar-header { margin-top: 1em; }
+
+#sp-navbar-collapse-1 { min-height: 100%; }
+
+.navbar-toggle { padding: 0; }
+
+
+/*====================*/
+/* Logo
+/*====================*/
+
+.logo {
+	display: inline-block;
+	margin-top: 12px;
+}
+
+/* Black */ 
+#logo_black, 
+#logo_black rect {
+  fill: #000;
+}
+
+/* White */ 
+#logo_white, 
+#logo_white rect { 
+  fill: #fff;
+} 
+
+/* Grey  */ 
+#logo_grey, 
+#logo_grey rect { 
+  fill: #999;
+}
+
+/* Hover animation on black  */ 
+.logo-link:hover #logo_black,
+.logo-link:hover #logo_black rect {
+  -webkit-animation: color 1s infinite; /* Chrome, Safari, Opera */ 
+  animation: color 1s infinite;}
+
+@-webkit-keyframes color {
+    0%    {fill:#ffcc33;}
+    25%   {fill:#f55443;}
+    50%   {fill:#235b66;}
+    75%   {fill:#10a5ba;}
+    100%  {fill:#96bd2c;}   
+}
+
+@keyframes color {
+    0%    {fill:#ffcc33;}
+    25%   {fill:#f55443;}
+    50%   {fill:#235b66;}
+    75%   {fill:#10a5ba;}
+    100%  {fill:#96bd2c;}
+}
+
+.page-header {
+	margin-top: 3em;
+	margin-bottom: 5em;
+	border: none;
+	text-align: center;
+	@media(min-width: $screen-md-min) { text-align: left; }
+	h1 {
+		font-size: 5em;
+		@media(min-width: $screen-sm-min) { font-size: 8em; }
+	}
+}
+
+.home-feature { padding-bottom: 8em; }
+
+#homeHeader {
+	display: inline-block;
+	border-bottom: .25em solid #333;
+}
+
+
+
+/*====================*/
+/* Mobile menu (burger)
+/*====================*/
+
+.mobile-burger {
+	position: relative;
+  display: fixed;
+  width: 3.2em;
+  height: 3.2em;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bar {
+  position: absolute;
+  top: .2em;
+  height: 2.8em;
+  width: .8em;
+  background-color: #000;
+  transition: all 0.2s linear 0s;
+}
+
+.bar-left { left: .2em; }
+
+.bar-middle { left: 1.2em; }
+
+.bar-right { left: 2.2em; }
+
+/*MENU BARS ANIMATION*/
+%bar-movement {
+  left: 1.5em;
+  top: .4em;
+  height: 2.4em;
+  width: .4em;
+}
+
+.rotateL {
+  @extend %bar-movement;
+  transform: rotate(405deg);
+}
+
+.box-out {
+  top: .2em;
+  left: .3em;
+  width: 2.8em;
+  height: 2.8em;
+  border: .2em solid black;
+  background: transparent;
+}
+
+.rotateR {
+  @extend %bar-movement;
+  transform: rotate(-405deg);
+}

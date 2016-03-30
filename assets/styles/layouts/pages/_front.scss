@@ -1,0 +1,433 @@
+/*=========================================================================*/
+/*	#. Front-Page Styles
+/*=========================================================================*/
+
+
+/********** HOME SECTION **********/
+
+
+#home, 
+#about, 
+#work, 
+#contact {
+	min-height: 100vh;
+}
+
+#about, 
+#work, 
+#contact {
+	padding-top: 5em;
+}
+
+#contact {
+	margin-top: 5em;
+	background: $brand-alt-one;
+	color: #eee;
+	textarea, 
+  input {
+		color: #333;
+	}
+}
+
+#home {
+	margin-top: 0;
+	@media(min-width: $screen-md-min) { margin-top: 8em; }
+}
+
+#homeBox {
+  margin-bottom: 4em;
+  overflow: none;
+	text-align: center;
+}
+
+#homeHeader {
+	> h1 {
+		font-size: 4em;
+		@media(min-width: $screen-sm-min) { font-size: 4.8em; }
+	}	
+}
+
+.home-header {
+	margin-bottom: 4.5em;
+	> h1 {
+		font-size: 5em;
+		text-align: center;
+		@media(min-width: $screen-sm-min) {
+			font-size: 8em;
+			text-align: left;
+		}
+	}
+}
+
+.subHead h2 {
+	font-size: 2em;
+	font-weight: $font-medium;
+}
+
+/*============================*/
+/* Computers + Phone Animation
+/*============================*/
+
+
+$desktop-width: 70%;
+$desktop-height: 65%;
+
+$laptop-width: 45%;
+$laptop-height: 52%;
+
+$tablet-width: 19%;
+$tablet-height: 40%;
+
+$phone-width: 10%;
+$phone-height: 30%;
+
+.devices {
+  position: relative;
+  width: 25em;
+  height: 16em;
+  @media(min-width: $screen-sm-min) {
+    width: 39em;
+    height: 24em;
+  }
+  > .desktop-wrap {
+    position: relative;
+    display: block;
+    width: $desktop-width;
+    height: 100%;
+    margin-left: 12%;
+    overflow: hidden;
+    > .desktop-monitor {
+      width: 100%;
+      height: $desktop-height;
+      background: $brand-primary;
+      border: .8em solid #474e5d;
+      border-radius: 4%;
+      overflow: hidden;
+      @media(min-width: $screen-sm-min) { border: 1em solid #474e5d; }
+    }
+  }  
+}
+
+.base {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 0;
+  width: 3.5em;
+  border-bottom: 2.25em solid #e8ebf0;
+	border-left: .3em solid transparent;
+	border-right: .3em solid transparent;
+  @media(min-width: $screen-sm-min) {
+    width: 5.25em;
+    border-bottom: 2.75em solid #e8ebf0;
+  }
+  > div { position: absolute; }
+ 	&:before {
+    top: 0;
+    width: 3em;
+    height: 0;
+	  border-bottom: .5em solid #ccc;
+    border-left: .1em solid transparent;
+    border-right: .1em solid transparent;
+    @media(min-width: $screen-sm-min) { width: 4.75em; }
+	}
+  
+  &:after {
+    top: 1.5em;
+    left: -1.3em;
+    height: 0;
+    width: 5.5em;
+    border-bottom: .75em solid #ededed;
+    border-left: 1.2em solid transparent;
+    border-right: 1.2em solid transparent;
+    border-radius: 20px;
+    @media(min-width: $screen-sm-min) {
+      left: -1.4em;
+      top: 2.5em;
+      width: 7.5em;
+    }
+  }
+  &:before, 
+  &:after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.anim-content {
+  width: 100%;
+  height: 17.2em;
+  overflow: hidden;
+}
+
+.phone-content {
+  width: 100%;
+  height: auto;
+}
+
+.pg {
+  display: block;
+  width: 60%;
+  height: 42%;
+  margin: .5em auto;
+  background: #fff;
+  border: 1px solid #f4f5f7;
+  border-top: 20px solid #f4f5f7;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #e0625e;
+  overflow: inherit;
+  @media(min-width: $screen-sm-min) {
+    height: 65%;
+    margin: 1em auto;
+    box-shadow: 0 5px 0 #e0625e;
+  }
+}
+
+.txt {
+  margin: .5em auto; 
+  width: 100%;
+  list-style: none;
+  padding: 0 10%;
+  > li {
+  	height: 1em;
+  	margin-bottom: 9px;
+    background: #eee;
+  	&:nth-child(2) { height: 4.3em; }
+		&:nth-child(5) { margin-right: 0; }
+  }
+  > .thin {
+    display: inline-block;
+    width: 26%;
+	  height: 3.1em;
+	  margin-right: 6px;
+    @media(min-width: $screen-sm-min) { width: 28%; }
+	}
+}
+
+.laptop-wrap {
+  position: absolute;
+  top: 44%;
+  left: 54%;
+  z-index: 200;
+  width: $laptop-width;
+  height: $laptop-height;
+  overflow: hidden;
+  > .laptop-monitor {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 75%;
+    background: $brand-primary;
+    border: .6em solid #474e5d;
+    border-radius: 10px 10px 0 0;
+    overflow: inherit;
+    @media(min-width: $screen-sm-min) { border: .8em solid #474e5d; }
+    // laptop camera
+    &:before {
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      margin: -3px 0 0 -3px;
+      border-radius: 6px;
+      background: #a5adbd;
+      content: "";
+    }
+  }
+}
+
+.txt-laptop {
+	> li {
+	  background: #eee;
+	  &:nth-child(2) { height: 2em; }
+	}
+	> .thin { height: 2em; }
+}
+
+.btm {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: .5em;
+  border-radius: 0 0 20px 20px;
+  background: #ddd;
+}
+
+.tablet {
+  position: absolute;
+  top: 42%;
+  left: 7%;
+  background: $brand-primary;
+  width: $tablet-width;
+  height: $tablet-height;
+  border-radius: .4em;
+  border: .8em solid #474e5d;
+  border-left: .3em solid;
+  border-right: .3em solid;
+  overflow: hidden;
+	& .tablet-screen {
+    position: relative;
+	  width: 100%;
+	  height: auto;
+    margin: 0 auto; 
+	}
+	& .txt {
+	  width: 85%;
+	  > li {
+		  height: 1.4em;
+		}
+	}
+}
+
+.phone {
+  position: absolute;
+  top: 59%;
+  left: 20%;
+  width: $phone-width;
+  height: $phone-height;
+  background: $brand-primary;
+  border-radius: .4em;
+  border: .8em solid #474e5d;
+  border-left: .3em solid;
+  border-right: .3em solid;
+  overflow: hidden;
+	& .screen {
+    position: relative;
+	  width: 100%;
+	  height: auto;
+    margin: 0 auto; 
+	}
+	& .txt {
+	  width: 85%;
+	  > li { height: 1.4em; }
+	}
+}
+
+
+
+
+/********** ABOUT SECTION **********/
+
+#about {
+	background: $brand-primary;
+	color: #fefefe;
+	a {
+		color: $brand-alt-one;
+		text-decoration: underline;
+		&:hover { color: $brand-alt-two; }
+	}
+}
+
+.headshot { border-radius: 50%; }
+
+#nebraska_drawing {
+	display: inline-block;
+  width: 100%;
+	fill: #fefefe;
+	&:hover { animation: colorNe 1s infinite; }
+}
+
+@keyframes colorNe {
+    0%    {fill:#eee;}
+    25%   {fill:#f55443;}
+    50%   {fill:#333;}
+    75%   {fill:#eee;}
+    100%  {fill:#e22440;}
+}
+
+
+
+/********** WORK SECTION **********/
+
+.work-previews { margin-bottom: 5em; }
+
+.title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  min-width: 100%;
+  padding-left: 2%;
+  line-height: 1.2;
+  font-weight: $font-bold;
+  color: $brand-primary;
+  background: #fff;
+  &.pixies {
+  	font-size: 6em;
+  	@media(min-width: $screen-sm-min) { font-size: 7em; }
+		@media(min-width: $screen-lg-min) { font-size: 9em; }
+  }
+  &.adamyale {
+  	font-size: 3em;
+  	@media(min-width: $screen-sm-min) { font-size: 5em; }
+  }
+  &.ingrid {
+  	font-size: 2em;
+  	@media(min-width: $screen-sm-min) { font-size: 3em; }
+		@media(min-width: $screen-lg-min) { font-size: 4em; }
+  }
+  &.maroon5 {
+  	font-size: 6em;
+  	@media(min-width: $screen-sm-min) { font-size: 7em; }
+		@media(min-width: $screen-lg-min) { font-size: 8em; }
+  }
+  &.watterson {
+  	font-size: 3em;
+  	@media(min-width: $screen-sm-min) { font-size: 4em; }
+		@media(min-width: $screen-lg-min) { font-size: 6em; }
+  }
+  &.obicreative {
+  	font-size: 4em;
+  	@media(min-width: $screen-sm-min) { font-size: 5em; }
+		@media(min-width: $screen-lg-min) { font-size: 7em; }
+  }
+  &.manu {
+  	font-size: 4em;
+  	@media(min-width: $screen-sm-min) { font-size: 5em; }
+		@media(min-width: $screen-lg-min) { font-size: 8em; }
+  }
+}
+
+.workImg {
+	padding: 0;
+	cursor: pointer;
+	overflow: hidden;
+	> img {
+		opacity: 1;
+    transition: all .1s linear;
+	}
+	&:hover {
+		background: $brand-primary;
+		&:nth-child(even) {
+			background-color: $brand-alt-two;
+			> .title-overlay {
+				color: $brand-alt-two;
+			}
+		}
+		& .imgWrap {
+	    background-color: $brand-primary;
+	    transition: all .1s linear;
+	    opacity: .2;
+		}
+		.title-overlay {
+			visibility: visible;
+			transition: all .1s linear;
+		}	
+	}
+}
+
+
+.see-more {
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: none;
+	a {
+		text-decoration: underline;
+		font-weight: 800;
+	}
+}
+
+
+/********** CONTACT SECTION **********/

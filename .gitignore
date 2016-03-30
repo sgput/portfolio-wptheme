@@ -1,0 +1,8 @@
+# Don't ignore dist dir, but ignore everything inside
+!/dist
+/dist/*
+
+# Don't ignore wp-content/plugins dir, but ignore eveything inside
+!/wp-content/plugins
+/wp-content/plugins/*
+

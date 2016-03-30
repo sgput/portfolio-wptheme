@@ -1,0 +1,64 @@
+body {
+	font-family: $font-stack;
+}
+
+p {
+	font-size: 1.4em;
+	margin-bottom: 1.4em;
+	font-family: $font-serif;
+	@media(min-width: $screen-sm-min) {
+		font-size: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	@media(min-width: $screen-md-min) {
+		font-size: 1.75em;
+		margin-bottom: 1.75em;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	font-family: $font-stack;
+}
+
+h1 {
+	font-size: 5em;
+	font-weight: $font-bold;
+	margin: 0;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: $font-bold;
+	margin-bottom: 1em;
+}
+
+a {
+	color: $brand-primary;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.back-to-top {
+	background: none;
+	margin: 20px;
+	position: fixed;
+	bottom: 10%;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #ddd;
+	> i {
+		font-size: 40px;
+	}
+}

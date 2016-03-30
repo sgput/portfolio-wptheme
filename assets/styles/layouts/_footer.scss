@@ -1,0 +1,35 @@
+/*=========================================================================*/
+/*	#. Footer Styles
+/*=========================================================================*/
+
+footer {
+	padding: 3em 0;
+	background: $brand-primary;
+	color: #fff;
+	a {
+		color: #fff;
+		&:hover {
+			text-decoration: none;
+			font-weight: $font-medium;
+			color: $brand-alt-two;
+		}
+	}
+	h3 {
+		display: none;
+		color: #fff;
+	}
+	.copyright {
+		text-align: center;
+		font-size: .75em;
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 2em 0;
+		padding: 0;
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+	.children { display: none; }
+}
