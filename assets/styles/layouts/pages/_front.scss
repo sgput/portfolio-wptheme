@@ -6,15 +6,15 @@
 /********** HOME SECTION **********/
 
 
-#home, 
-#about, 
-#work, 
+#home,
+#about,
+#work,
 #contact {
 	min-height: 100vh;
 }
 
-#about, 
-#work, 
+#about,
+#work,
 #contact {
 	padding-top: 5em;
 }
@@ -23,7 +23,7 @@
 	margin-top: 5em;
 	background: $brand-alt-one;
 	color: #eee;
-	textarea, 
+	textarea,
   input {
 		color: #333;
 	}
@@ -44,7 +44,7 @@
 	> h1 {
 		font-size: 4em;
 		@media(min-width: $screen-sm-min) { font-size: 4.8em; }
-	}	
+	}
 }
 
 .home-header {
@@ -105,7 +105,7 @@ $phone-height: 30%;
       overflow: hidden;
       @media(min-width: $screen-sm-min) { border: 1em solid #474e5d; }
     }
-  }  
+  }
 }
 
 .base {
@@ -131,7 +131,7 @@ $phone-height: 30%;
     border-right: .1em solid transparent;
     @media(min-width: $screen-sm-min) { width: 4.75em; }
 	}
-  
+
   &:after {
     top: 1.5em;
     left: -1.3em;
@@ -147,7 +147,7 @@ $phone-height: 30%;
       width: 7.5em;
     }
   }
-  &:before, 
+  &:before,
   &:after {
     position: absolute;
     content: "";
@@ -184,7 +184,7 @@ $phone-height: 30%;
 }
 
 .txt {
-  margin: .5em auto; 
+  margin: .5em auto;
   width: 100%;
   list-style: none;
   padding: 0 10%;
@@ -270,7 +270,7 @@ $phone-height: 30%;
     position: relative;
 	  width: 100%;
 	  height: auto;
-    margin: 0 auto; 
+    margin: 0 auto;
 	}
 	& .txt {
 	  width: 85%;
@@ -296,7 +296,7 @@ $phone-height: 30%;
     position: relative;
 	  width: 100%;
 	  height: auto;
-    margin: 0 auto; 
+    margin: 0 auto;
 	}
 	& .txt {
 	  width: 85%;
@@ -398,7 +398,8 @@ $phone-height: 30%;
 		opacity: 1;
     transition: all .1s linear;
 	}
-	&:hover {
+	&:hover,
+  &:focus {
 		background: $brand-primary;
 		&:nth-child(even) {
 			background-color: $brand-alt-two;
@@ -414,7 +415,7 @@ $phone-height: 30%;
 		.title-overlay {
 			visibility: visible;
 			transition: all .1s linear;
-		}	
+		}
 	}
 }
 

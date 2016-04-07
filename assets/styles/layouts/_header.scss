@@ -13,7 +13,8 @@
 	  	line-height: 1.5em;
 	  	text-align: left;
   	}
-  	&:hover {
+  	&:hover,
+    &:focus {
 		background-color: $brand-primary;
 		color: #fff;
   	}
