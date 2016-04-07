@@ -82,8 +82,11 @@
 	border: none;
 	text-align: center;
   h1 {
-    font-size: 4em;
+    font-size: 3.25em;
     @media(min-width: $screen-sm-min) {
+      font-size: 6.5em;
+    }
+    @media(min-width: $screen-md-min) {
       font-size: 9em;
     }
   }
