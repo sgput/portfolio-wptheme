@@ -1,9 +1,7 @@
-body {
-	font-family: $font-stack;
-}
+body { font-family: $font-stack; }
 
 p {
-	font-size: 1.4em;
+	font-size: 1.5em;
 	margin-bottom: 1.4em;
 	font-family: $font-serif;
 	@media(min-width: $screen-sm-min) {
@@ -28,18 +26,14 @@ h1 {
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 3.25em;
 	font-weight: $font-bold;
 	margin-bottom: 1em;
 }
 
-a {
-	color: $brand-primary;
-}
+a { color: $brand-primary; }
 
-li {
-	list-style-type: none;
-}
+li { list-style-type: none; }
 
 .container-fluid {
 	padding-left: 0;
@@ -50,8 +44,8 @@ li {
 	background: none;
 	margin: 20px;
 	position: fixed;
-	bottom: 10%;
-	right: 0;
+	bottom: 30px;
+	right: 30px;
 	width: 40px;
 	height: 40px;
 	z-index: 100;

@@ -17,7 +17,7 @@
 		background-color: $brand-primary;
 		color: #fff;
   	}
-	}  
+	}
 }
 
 .navbar-header { margin-top: 1em; }
@@ -36,28 +36,28 @@
 	margin-top: 12px;
 }
 
-/* Black */ 
-#logo_black, 
+/* Black */
+#logo_black,
 #logo_black rect {
   fill: #000;
 }
 
-/* White */ 
-#logo_white, 
-#logo_white rect { 
+/* White */
+#logo_white,
+#logo_white rect {
   fill: #fff;
-} 
+}
 
-/* Grey  */ 
-#logo_grey, 
-#logo_grey rect { 
+/* Grey  */
+#logo_grey,
+#logo_grey rect {
   fill: #999;
 }
 
-/* Hover animation on black  */ 
+/* Hover animation on black  */
 .logo-link:hover #logo_black,
 .logo-link:hover #logo_black rect {
-  -webkit-animation: color 1s infinite; /* Chrome, Safari, Opera */ 
+  -webkit-animation: color 1s infinite; /* Chrome, Safari, Opera */
   animation: color 1s infinite;}
 
 @-webkit-keyframes color {
@@ -65,7 +65,7 @@
     25%   {fill:#f55443;}
     50%   {fill:#235b66;}
     75%   {fill:#10a5ba;}
-    100%  {fill:#96bd2c;}   
+    100%  {fill:#96bd2c;}
 }
 
 @keyframes color {
@@ -81,11 +81,17 @@
 	margin-bottom: 5em;
 	border: none;
 	text-align: center;
-	@media(min-width: $screen-md-min) { text-align: left; }
-	h1 {
-		font-size: 5em;
-		@media(min-width: $screen-sm-min) { font-size: 8em; }
-	}
+  h1 {
+    font-size: 4em;
+    @media(min-width: $screen-sm-min) {
+      font-size: 9em;
+    }
+  }
+	@media(min-width: $screen-md-min) {
+    text-align: left;
+  }
+
+
 }
 
 .home-feature { padding-bottom: 8em; }

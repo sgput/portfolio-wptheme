@@ -3,7 +3,7 @@
 <?php endwhile; ?>
 
 <section id="home" class="home-feature container">
-  <div class="row">
+    <div class="row">
 		<div id="homeBox" class="text-center col-xs-12 col-md-4 col-md-offset-1">
 			<div id="homeHeader">
 				<h1>spencer<br>putnam</h1>
@@ -21,12 +21,12 @@
 			      <div class="anim-content">
 			        <div class="pg">
 			          <ul class="txt">
-			            <li></li>        
+			            <li></li>
 			            <li></li>
 			            <li class="thin"></li>
 			            <li class="thin"></li>
 			            <li class="thin"></li>
-			          </ul>  
+			          </ul>
 			        </div>
 			      </div>
 			      <!-- end anim-content -->
@@ -37,15 +37,15 @@
 			  <!--end desktop-wrap-->
 			  <!-- begin laptop -->
 			  <div class="laptop-wrap">
-			    <div class="laptop-monitor"> 
+			    <div class="laptop-monitor">
 			      <div class="anim-content">
 			          <ul class="txt txt-laptop">
-			            <li></li>        
+			            <li></li>
 			            <li></li>
 			            <li class="thin"></li>
 			            <li class="thin"></li>
 			            <li class="thin"></li>
-			          </ul>          
+			          </ul>
 			      </div>
 			    </div>
 			    <!-- end laptop-monitor   -->
@@ -62,7 +62,7 @@
 			          <li></li>
 			        </ul>
 			      </div>
-			    </div>    
+			    </div>
 			  </div>
 			  <!-- end tablet -->
 			  <!-- begin phone -->
@@ -75,7 +75,7 @@
 			          <li></li>
 			        </ul>
 			      </div>
-			    </div>    
+			    </div>
 			  </div>
 			  <!-- end phone -->
 			</div>
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
 				<div><?php the_field('home_about_copy'); ?></div>
 			</div>
 		</div>
@@ -147,7 +147,9 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="home-header"><h1>Contact</h1></div>
-				<div class="contact-form"><?php if( function_exists( 'ninja_forms_display_form' ) ) { ninja_forms_display_form( 1 ); } ?></div>
+				<div class="contact-form col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+					<?php if( function_exists( 'ninja_forms_display_form' ) ) { ninja_forms_display_form( 1 ); } ?>
+				</div>
 			</div>
 		</div>
 	</div>

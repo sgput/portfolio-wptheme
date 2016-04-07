@@ -35,7 +35,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
-    <a href="#" class="back-to-top"><i class="glyphicon glyphicon-circle-arrow-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fa fa-arrow-circle-up"></i></a>
     <script type='text/javascript' id="__bs_script__">//<![CDATA[
 document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.2.1.0.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));</script>
   </body>
