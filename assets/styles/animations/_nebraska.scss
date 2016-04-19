@@ -1,0 +1,16 @@
+#neOutline {
+  display: inline-block;
+  width: 100%;
+  stroke-width: 5px;
+  stroke: #f55443;
+  fill: #fefefe;
+  &:hover { animation: colorNe 1s infinite; }
+}
+
+@keyframes colorNe {
+  0%    {fill:#eee;}
+  25%   {fill:#f55443;}
+  50%   {fill:#333;}
+  75%   {fill:#eee;}
+  100%  {fill:#e22440;}
+}

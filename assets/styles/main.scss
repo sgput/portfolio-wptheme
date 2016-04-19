@@ -18,10 +18,14 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+// pages
 @import "layouts/pages/about";
 @import "layouts/pages/casestudy";
 @import "layouts/pages/contact";
 @import "layouts/pages/front";
 @import "layouts/pages/work";
 
-
+// animations and illustrations
+@import "animations/nebraska";
+@import "animations/devices";

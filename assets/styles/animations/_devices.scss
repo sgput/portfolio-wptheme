@@ -1,0 +1,238 @@
+/*============================*/
+/* Computers + Phone Animation
+/*============================*/
+
+$desktop-width: 70%;
+$desktop-height: 65%;
+
+$laptop-width: 45%;
+$laptop-height: 52%;
+
+$tablet-width: 19%;
+$tablet-height: 40%;
+
+$phone-width: 10%;
+$phone-height: 30%;
+
+.devices {
+  position: relative;
+  width: 25em;
+  height: 16em;
+  @media(min-width: $screen-sm-min) {
+    width: 39em;
+    height: 24em;
+  }
+  > .desktop-wrap {
+    position: relative;
+    display: block;
+    width: $desktop-width;
+    height: 100%;
+    margin-left: 12%;
+    overflow: hidden;
+    > .desktop-monitor {
+      width: 100%;
+      height: $desktop-height;
+      background: $brand-primary;
+      border: .8em solid #474e5d;
+      border-radius: 4%;
+      overflow: hidden;
+      @media(min-width: $screen-sm-min) { border: 1em solid #474e5d; }
+    }
+  }
+}
+
+.base {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 0;
+  width: 3.5em;
+  border-bottom: 2.25em solid #e8ebf0;
+  border-left: .3em solid transparent;
+  border-right: .3em solid transparent;
+  @media(min-width: $screen-sm-min) {
+    width: 5.25em;
+    border-bottom: 2.75em solid #e8ebf0;
+  }
+  > div { position: absolute; }
+  &:before {
+    top: 0;
+    width: 3em;
+    height: 0;
+    border-bottom: .5em solid #ccc;
+    border-left: .1em solid transparent;
+    border-right: .1em solid transparent;
+    @media(min-width: $screen-sm-min) { width: 4.75em; }
+  }
+
+  &:after {
+    top: 1.5em;
+    left: -1.3em;
+    height: 0;
+    width: 5.5em;
+    border-bottom: .75em solid #ededed;
+    border-left: 1.2em solid transparent;
+    border-right: 1.2em solid transparent;
+    border-radius: 20px;
+    @media(min-width: $screen-sm-min) {
+      left: -1.4em;
+      top: 2.5em;
+      width: 7.5em;
+    }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.anim-content {
+  width: 100%;
+  height: 17.2em;
+  overflow: hidden;
+}
+
+.phone-content {
+  width: 100%;
+  height: auto;
+}
+
+.pg {
+  display: block;
+  width: 60%;
+  height: 42%;
+  margin: .5em auto;
+  background: #fff;
+  border: 1px solid #f4f5f7;
+  border-top: 20px solid #f4f5f7;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #e0625e;
+  overflow: inherit;
+  @media(min-width: $screen-sm-min) {
+    height: 65%;
+    margin: 1em auto;
+    box-shadow: 0 5px 0 #e0625e;
+  }
+}
+
+.txt {
+  margin: .5em auto;
+  width: 100%;
+  list-style: none;
+  padding: 0 10%;
+  > li {
+    height: 1em;
+    margin-bottom: 9px;
+    background: #eee;
+    &:nth-child(2) { height: 4.3em; }
+    &:nth-child(5) { margin-right: 0; }
+  }
+  > .thin {
+    display: inline-block;
+    width: 26%;
+    height: 3.1em;
+    margin-right: 6px;
+    @media(min-width: $screen-sm-min) { width: 28%; }
+  }
+}
+
+.laptop-wrap {
+  position: absolute;
+  top: 44%;
+  left: 54%;
+  z-index: 200;
+  width: $laptop-width;
+  height: $laptop-height;
+  overflow: hidden;
+  > .laptop-monitor {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 75%;
+    background: $brand-primary;
+    border: .6em solid #474e5d;
+    border-radius: 10px 10px 0 0;
+    overflow: inherit;
+    @media(min-width: $screen-sm-min) { border: .8em solid #474e5d; }
+    // laptop camera
+    &:before {
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      margin: -3px 0 0 -3px;
+      border-radius: 6px;
+      background: #a5adbd;
+      content: "";
+    }
+  }
+}
+
+.txt-laptop {
+  > li {
+    background: #eee;
+    &:nth-child(2) { height: 2em; }
+  }
+  > .thin { height: 2em; }
+}
+
+.btm {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: .5em;
+  border-radius: 0 0 20px 20px;
+  background: #ddd;
+}
+
+.tablet {
+  position: absolute;
+  top: 42%;
+  left: 7%;
+  background: $brand-primary;
+  width: $tablet-width;
+  height: $tablet-height;
+  border-radius: .4em;
+  border: .8em solid #474e5d;
+  border-left: .3em solid;
+  border-right: .3em solid;
+  overflow: hidden;
+  & .tablet-screen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  & .txt {
+    width: 85%;
+    > li {
+      height: 1.4em;
+    }
+  }
+}
+
+.phone {
+  position: absolute;
+  top: 59%;
+  left: 20%;
+  width: $phone-width;
+  height: $phone-height;
+  background: $brand-primary;
+  border-radius: .4em;
+  border: .8em solid #474e5d;
+  border-left: .3em solid;
+  border-right: .3em solid;
+  overflow: hidden;
+  & .screen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  & .txt {
+    width: 85%;
+    > li { height: 1.4em; }
+  }
+}
